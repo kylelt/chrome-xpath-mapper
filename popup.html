@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chrome XPath Mapper</title>
+    <style>
+    body {
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+      background: white;
+      font-family: 'monospaced';
+      font-size: 12pt;
+    }
+
+    div:first-child {
+      margin-top: 0px;
+    }
+
+    div {
+      cursor: pointer;
+      text-align: center;
+      padding: 1px 3px;
+      font-family: sans-serif;
+      font-size: 0.8em;
+      margin-top: 1px;
+      background: #fff;
+    }
+    #red {
+      border: 1px solid red;
+      color: red;
+    }
+    #blue {
+      border: 1px solid blue;
+      color: blue;
+    }
+    #green {
+      border: 1px solid green;
+      color: green;
+    }
+    #yellow {
+      border: 1px solid yellow;
+      color: yellow;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      min-width:30em;
+    }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+      <div class="container">
+          <div class="item">
+              Key
+          </div>
+          <div class="item">
+              <input id="key1" cols="15" type="text" />
+          </div>
+          <div class="item">
+              <span>Xpath ...</span>
+          </div>
+      </div>
+  </body>
+</html>
